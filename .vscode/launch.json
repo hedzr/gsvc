@@ -59,6 +59,8 @@
       // dlv debug --headless --listen=:2345 --log -- -myArg=123
       // See:
       // https://github.com/microsoft/vscode-go/blob/master/docs/Debugging-Go-code-using-VS-Code.md
+      // https://golangforall.com/en/post/go-docker-delve-remote-debug.html
+      // https://jerome-ran.medium.com/golang-remote-debugging-with-visual-studio-code-a918de5d83f3
     }
   ]
 }
