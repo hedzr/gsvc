@@ -25,6 +25,8 @@ func TestServiceFile(t *testing.T) {
 		RunAs:          "",
 		Dependencies:   nil,
 		Entity:         nil,
+
+		TempDir: os.TempDir(),
 	}
 	err := createServiceFile(ctx, config, file)
 	if err != nil {

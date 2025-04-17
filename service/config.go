@@ -2,6 +2,7 @@ package service
 
 import (
 	"fmt"
+	"os"
 	"strings"
 
 	"github.com/hedzr/is/dir"
@@ -76,6 +77,22 @@ func (e *Config) makeSafety() {
 
 	if e.WorkDir == "" || !dir.FileExists(e.WorkDir) {
 		e.WorkDir = dir.GetExecutableDir()
+	}
+
+	if e.TempDir == "" {
+		e.TempDir = os.TempDir()
+	}
+	if e.RunDir == "" {
+		e.RunDir = "/var/run"
+		if !dir.FileExists(e.RunDir) {
+			e.RunDir = os.TempDir()
+		}
+	}
+	if e.LogDir == "" {
+		e.LogDir = "/var/log"
+		if !dir.FileExists(e.LogDir) {
+			e.LogDir = os.TempDir()
+		}
 	}
 
 	if e.StandardOutPath == "" {
