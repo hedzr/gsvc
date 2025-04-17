@@ -549,8 +549,7 @@ const (
 </dict>
 </plist>`
 
-	systemDaemons             = "/Library/LaunchDaemons"
-	systemAgents              = "/Library/LaunchAgents"
-	userAgents                = "$HOME/Library/LaunchAgents"
-	DefaultVendorDomainPrefix = "com.examples."
+	systemDaemons = "/Library/LaunchDaemons"
+	systemAgents  = "/Library/LaunchAgents"
+	userAgents    = "$HOME/Library/LaunchAgents"
 )
