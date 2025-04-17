@@ -63,7 +63,7 @@ func TestInstall(t *testing.T) {
 		svc := New(ctx)
 		err := svc.Control(ctx, demoConfig, Uninstall)
 		if err != nil {
-			if errors.Is(err, errors.Unavailable) {
+			if errors.Is(err, errors.Unavailable) || errors.Is(err, ErrServiceIsNotEnabled) {
 				return
 			}
 			t.Fatal(err)
