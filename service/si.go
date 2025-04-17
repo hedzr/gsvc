@@ -20,6 +20,8 @@ type Manager interface {
 
 	Run(ctx context.Context, config *Config) (err error)
 	Control(ctx context.Context, config *Config, cmd Command) (err error)
+
+	NotifyLoggerCreated(logger ZLogger)
 }
 
 type Backend interface {
