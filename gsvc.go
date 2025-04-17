@@ -1,4 +1,4 @@
-package is
+package gsvc
 
 import (
 	"os"
