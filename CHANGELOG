@@ -1,5 +1,13 @@
 # CHANGELOG & HISTORY
 
+- v0.3.8
+  - upgrade dep (is + logg)
+    - `is` -> v0.8.x
+
+- v0.3.3
+  - cleanup, remove dep to `/x/crypyi`
+  - upgrade dep
+
 - v0.3.2
   - fix `DefaultVendorDomainPrefix`
 
