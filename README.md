@@ -1,5 +1,11 @@
 # gsvc
 
+## ARCHIVED
+
+The `service` addon had been moved into [cmdr-addons](https://github.com/hedzr/cmdr-addons) as a child addon for [cmdr.v2](https://github.com/hedzr/cmdr).
+
+[cmdr-addons](https://github.com/hedzr/cmdr-addons) unarchived and reloaded.
+
 [![Go](https://github.com/hedzr/gsvc/actions/workflows/go.yml/badge.svg)](https://github.com/hedzr/gsvc/actions/workflows/go.yml)
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/hedzr/gsvc)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/hedzr/gsvc.svg?label=release)](https://github.com/hedzr/gsvc/releases)
